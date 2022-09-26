@@ -11,8 +11,8 @@
           <button @click="handleClick">Logout</button>
         </div>
         <div v-else>
-          <router-link class="btn" :to="{ name: 'Signup' }">Signup</router-link>
-          <router-link class="btn" :to="{ name: 'Login' }">Login</router-link>
+          <router-link v-if="$route.path === '/login'" class="btn" :to="{ name: 'Signup' }">Signup</router-link>
+          <router-link v-else class="btn" :to="{ name: 'Login' }">Login</router-link>
         </div>
       </div>
     </nav>

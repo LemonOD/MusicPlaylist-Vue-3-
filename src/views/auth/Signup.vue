@@ -11,7 +11,6 @@
 </template>
 
 <script>
-// using @ means start at the project src root
 import useSignup from '@/composables/useSignup'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
