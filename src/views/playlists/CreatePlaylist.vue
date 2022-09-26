@@ -52,7 +52,7 @@ export default {
         })
         isPending.value = false
         if (!error.value) {
-          router.push({ name: 'PlaylistDetails', params: { id: res.id }})
+          await router.push({name: 'PlaylistDetails', params: {id: res.id}})
         }
       }
     }
@@ -72,7 +72,7 @@ export default {
         fileError.value = 'Please select an image file (png or jpg)'
       }
     }
-    
+
     return { title, description, handleSubmit, fileError, handleChange, isPending }
   }
 }
