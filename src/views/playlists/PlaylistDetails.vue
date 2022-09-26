@@ -59,11 +59,10 @@ export default {
         && user.value
         && user.value.uid == playlist.value.userId
     })
-
     const handleDelete = async () => {
       await deleteDoc()
       await deleteImage(playlist.value.filePath)
-      router.push({ name: 'Home' })
+      await router.push({name: 'Home'})
     }
 
     const handleClick = async (id) => {
