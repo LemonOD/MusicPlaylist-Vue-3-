@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// using @ means start at the project src root
 import useLogin from '@/composables/useLogin'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
