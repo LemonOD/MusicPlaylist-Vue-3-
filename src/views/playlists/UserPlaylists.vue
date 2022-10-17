@@ -18,7 +18,7 @@ export default {
   setup() {
     const { user } = getUser()
     const { documents: playlists } = getCollection(
-      'playlists', 
+      'playlists',
       ['userId', '==', user.value.uid]
     )
 
